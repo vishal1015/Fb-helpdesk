@@ -112,7 +112,7 @@ app.post('/api/login', async (req, res) => {
 });
 
 app.get('/api/getchat', async (req, res) => {
-  const response = {};//await fetch('https://graph.facebook.com/v19.0/197468190125742/conversations?fields=participants,messages{id,message,created_time,from}&access_token=EAAZATCgv3TQMBO6sMHtYmiOICBXaBCtovrreSwZA6DwwhDixe5BgkFPtI3pWGZCvJlYTBIWfKsc2R7oCmKvbNaLcLIHusXSfnZBU1YjuZApdWmGeudIsa3IXeggzYpcusnv9q0anF8HSHedGQX4oPceFHQdQReifIsxBSrGA0aFKkU5IaBNBpGbTobZAArYHPiXZA1XhWIZD');
+  const response = await fetch('https://graph.facebook.com/v19.0/197468190125742/conversations?fields=participants,messages{id,message,created_time,from}&access_token=EAAZATCgv3TQMBO6sMHtYmiOICBXaBCtovrreSwZA6DwwhDixe5BgkFPtI3pWGZCvJlYTBIWfKsc2R7oCmKvbNaLcLIHusXSfnZBU1YjuZApdWmGeudIsa3IXeggzYpcusnv9q0anF8HSHedGQX4oPceFHQdQReifIsxBSrGA0aFKkU5IaBNBpGbTobZAArYHPiXZA1XhWIZD');
   const data = await response.json();
 
   try {

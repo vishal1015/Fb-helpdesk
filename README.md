@@ -36,7 +36,7 @@ This project is an application designed to serve as a Facebook Helpdesk for busi
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/abhigpta19/FBHelpdesk.git
+   git clone https://github.com/vishal1015/Fb-helpdesk
    cd FBHelpdesk
 2. **Install the dependencies:**
  

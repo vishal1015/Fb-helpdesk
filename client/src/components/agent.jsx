@@ -3,7 +3,7 @@ import { ReactComponent as MailBox } from '../assets/inbox-alt-1-svgrepo-com.svg
 import { ReactComponent as Connection } from "../assets/share-circle-network-connection-social-svgrepo-com.svg";
 import { ReactComponent as Friend } from "../assets/user-friends-svgrepo-com.svg";
 import { ReactComponent as Graph } from "../assets/graph-increase-svgrepo-com.svg";
-import img from "../assets/young-bearded-man-with-striped-shirt.jpg"
+import img from "../assets/my photo 2.jpg";
 import img1 from "../assets/align-left_10654774.png"
 import { ReactComponent as RefreshIcon } from "../assets/refresh-svgrepo-com.svg";
 import { ReactComponent as CallIcon } from "../assets/call-alt-svgrepo-com.svg";
