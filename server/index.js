@@ -4,21 +4,29 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 require('dotenv').config();
-
-
+// const connectDB = require('./DB/db');
 const app = express();
 const PORT = process.env.PORT || 3001;
-
+// connectDB;
 app.use(cors());
 app.use(express.json());
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/fbpage';
+const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://vkharkya9:gXOTawIS1gYqG17A@cluster0.oxir9am.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const jwtSecretKey = process.env.JWT_SECRET_KEY || 'default-secret-key';
-
-mongoose.connect(mongoURI, {
+try {
+   mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-  });
+  } 
+  );
+  console.log("DB connected successfully");
+} catch (error) {
+  console.log(error);
+}
+// mongoose.connect(mongoURI, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   });
     
 
 const UserSchema = new mongoose.Schema({
@@ -104,7 +112,7 @@ app.post('/api/login', async (req, res) => {
 });
 
 app.get('/api/getchat', async (req, res) => {
-  const response = await fetch('https://graph.facebook.com/v19.0/197468190125742/conversations?fields=participants,messages{id,message,created_time,from}&access_token=EAAZATCgv3TQMBO6sMHtYmiOICBXaBCtovrreSwZA6DwwhDixe5BgkFPtI3pWGZCvJlYTBIWfKsc2R7oCmKvbNaLcLIHusXSfnZBU1YjuZApdWmGeudIsa3IXeggzYpcusnv9q0anF8HSHedGQX4oPceFHQdQReifIsxBSrGA0aFKkU5IaBNBpGbTobZAArYHPiXZA1XhWIZD');
+  const response = {};//await fetch('https://graph.facebook.com/v19.0/197468190125742/conversations?fields=participants,messages{id,message,created_time,from}&access_token=EAAZATCgv3TQMBO6sMHtYmiOICBXaBCtovrreSwZA6DwwhDixe5BgkFPtI3pWGZCvJlYTBIWfKsc2R7oCmKvbNaLcLIHusXSfnZBU1YjuZApdWmGeudIsa3IXeggzYpcusnv9q0anF8HSHedGQX4oPceFHQdQReifIsxBSrGA0aFKkU5IaBNBpGbTobZAArYHPiXZA1XhWIZD');
   const data = await response.json();
 
   try {

@@ -9,7 +9,7 @@
   left: 0;
   height: 100vh;
   width: 4vw; /* Adjust width as needed */
-  background-color: #0866ff; /* Adjust color as needed */
+  background-color: #1d4c97; /* Adjust color as needed */
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +36,7 @@
 }
 
 .nav-tabs li a:hover svg {
-  fill: #0866ff;
+  fill: #143973;
 }
 
 .active-nav {
@@ -44,7 +44,7 @@
 }
 
 .active-nav svg {
-  fill: #0866ff;
+  fill: #214b91;
 }
 
 .tab-content {
@@ -382,7 +382,7 @@
 .more-details {
   text-decoration: none;
   font-size: 15px;
-  color: #3671d1;
+  color: #184286;
   font-weight: 600;
   margin: 10px 0;
 }
