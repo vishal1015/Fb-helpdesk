@@ -2,7 +2,7 @@
 
 This project is an application designed to serve as a Facebook Helpdesk for businesses dealing with a high volume of messenger messages. The primary goal of the app is to simplify and streamline the process of managing and responding to Facebook messages, especially for companies receiving a large number of inquiries daily, such as e-commerce platforms like Amazon.
 
-#### Video Demonstration Link : [Demo Video]([https://drive.google.com/drive/folders/1R53mud5dOgBbOMckZyJbSGDIXwiX0f9A?usp=sharing](https://www.loom.com/share/8f08c17a685e41439b26265ec3c6297e?sid=6325e584-085d-40a4-8116-e4f9f38a02fe))
+#### Video Demonstration Link : [Demo Video]((https://www.loom.com/share/8f08c17a685e41439b26265ec3c6297e?sid=6325e584-085d-40a4-8116-e4f9f38a02fe))
 
 ## Table of Contents
 
