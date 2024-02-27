@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb+srv://vkharkya9:gXOTawIS1gYqG17A@cluster0.oxir9am.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+const mongoURI = process.env.MONGODB_URI 
 const jwtSecretKey = process.env.JWT_SECRET_KEY || 'default-secret-key';
 try {
    mongoose.connect(mongoURI, {

@@ -1,20 +1,20 @@
 export const DATA = [
     {
-        name: 'Amit RG',
+        name: 'vishal',
         type: 'Facebook DM',
         time: '10m',
         heading: 'jdsaflkjdlskjadfhadksfhjkdhasfkhjadsfhf',
         text: 'jdlsafkjdlsakjflkajdslfjljkjkasdjfkljdaslkfjlksdjalfjldskajflkjdsalkfjla'
     },
     {
-        name: 'Amit RG',
+        name: 'Ravi',
         type: 'Facebook DM',
         time: '10m',
         heading: 'jdsaflkjdlskjadfhadksfhjkdhasfkhjadsfhf',
         text: 'jdlsafkjdlsakjflkajdslfjljkjkasdjfkljdaslkfjlksdjalfjldskajflkjdsalkfjla'
     } ,
     {
-        name: 'Mannu',
+        name: 'Anupam',
         type: 'Facebook DM',
         time: '10m',
         heading: 'jdsaflkjdlskjadfhadksfhjkdhasfkhjadsfhf',
